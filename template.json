@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "defaultValue": "simpleLinuxVM",
+            "defaultValue": "simplelyllaLinuxVM",
             "type": "String",
             "metadata": {
                 "description": "The name of you Virtual Machine."
@@ -16,7 +16,7 @@
             }
         },
         "authenticationType": {
-            "defaultValue": "password",
+            "defaultValue": "Jevis@ambronay",
             "allowedValues": [
                 "sshPublicKey",
                 "password"
