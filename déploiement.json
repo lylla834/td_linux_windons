@@ -1,0 +1,194 @@
+{
+  "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406",
+  "name": "Microsoft.Template-20230703111406",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateLink": {
+      "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-windows/azuredeploy.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "templateHash": "14427937023370378081",
+    "parameters": {
+      "adminUsername": {
+        "type": "String",
+        "value": "lylla"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      },
+      "dnsLabelPrefix": {
+        "type": "String",
+        "value": "simple-vm-puboxiwbgobn6"
+      },
+      "publicIpName": {
+        "type": "String",
+        "value": "myPublicIP"
+      },
+      "publicIPAllocationMethod": {
+        "type": "String",
+        "value": "Dynamic"
+      },
+      "publicIpSku": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "osVersion": {
+        "type": "String",
+        "value": "2022-datacenter-azure-edition"
+      },
+      "vmSize": {
+        "type": "String",
+        "value": "Standard_D2s_v5"
+      },
+      "location": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "vmName": {
+        "type": "String",
+        "value": "simple-vm"
+      },
+      "securityType": {
+        "type": "String",
+        "value": "TrustedLaunch"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2023-07-03T09:14:10.8286977Z",
+    "duration": "PT4.5352148S",
+    "correlationId": "894233d3-ec37-4008-a27d-4e75943b0070",
+    "providers": [
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "publicIPAddresses",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "virtualMachines/extensions",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/networkSecurityGroups/default-NSG",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "default-NSG"
+          }
+        ],
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/virtualNetworks/MyVNET",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "MyVNET"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/publicIPAddresses/myPublicIP",
+            "resourceType": "Microsoft.Network/publicIPAddresses",
+            "resourceName": "myPublicIP"
+          },
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/virtualNetworks/MyVNET",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "MyVNET"
+          }
+        ],
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/networkInterfaces/myVMNic",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "myVMNic"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/networkInterfaces/myVMNic",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "myVMNic"
+          },
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Storage/storageAccounts/bootdiagscdy3h33avrkjs",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "bootdiagscdy3h33avrkjs"
+          },
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Storage/storageAccounts/bootdiagscdy3h33avrkjs",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "bootdiagscdy3h33avrkjs",
+            "apiVersion": "2022-05-01"
+          }
+        ],
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Compute/virtualMachines/simple-vm",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "simple-vm"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Compute/virtualMachines/simple-vm",
+            "resourceType": "Microsoft.Compute/virtualMachines",
+            "resourceName": "simple-vm"
+          }
+        ],
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Compute/virtualMachines/simple-vm/extensions/GuestAttestation",
+        "resourceType": "Microsoft.Compute/virtualMachines/extensions",
+        "resourceName": "simple-vm/GuestAttestation"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "marketplaceItemId": "Microsoft.Template"
+  }
+}

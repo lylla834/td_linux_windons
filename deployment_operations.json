@@ -1,0 +1,105 @@
+[
+  {
+    "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406/operations/BD383F514D857496",
+    "operationId": "BD383F514D857496",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-07-03T09:14:13.2308924Z",
+      "duration": "PT0.8830858S",
+      "trackingId": "609a652a-e413-446c-8d09-31a5f63349e6",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/networkInterfaces/myVMNic",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "myVMNic"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406/operations/4BD7212096805A70",
+    "operationId": "4BD7212096805A70",
+    "properties": {
+      "provisioningOperation": "Read",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-07-03T09:14:11.2410492Z",
+      "duration": "PT0.0698512S",
+      "trackingId": "08a13033-dfea-4765-a0b2-956a21ba94c9",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/publicIPAddresses/myPublicIP",
+        "resourceType": "Microsoft.Network/publicIPAddresses",
+        "resourceName": "myPublicIP",
+        "apiVersion": "2022-05-01"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406/operations/BECE9894431C0B90",
+    "operationId": "BECE9894431C0B90",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2023-07-03T09:14:10.9254504Z",
+      "duration": "PT3.9581699S",
+      "trackingId": "600c3383-e4b1-4efb-af0c-6ba7322e1edf",
+      "statusCode": "Accepted",
+      "targetResource": {
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Storage/storageAccounts/bootdiagscdy3h33avrkjs",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "bootdiagscdy3h33avrkjs"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406/operations/4D2165BBBB0E3331",
+    "operationId": "4D2165BBBB0E3331",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-07-03T09:14:12.2987818Z",
+      "duration": "PT5.3315013S",
+      "trackingId": "769f1402-4afc-43c4-bbfe-b5f3eb1e937c",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/virtualNetworks/MyVNET",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "MyVNET"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406/operations/D2AF5E121493698A",
+    "operationId": "D2AF5E121493698A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-07-03T09:14:11.0034711Z",
+      "duration": "PT4.0361906S",
+      "trackingId": "f5b4b44d-61f8-43a3-83d4-a3744a3196ed",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/publicIPAddresses/myPublicIP",
+        "resourceType": "Microsoft.Network/publicIPAddresses",
+        "resourceName": "myPublicIP"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Resources/deployments/Microsoft.Template-20230703111406/operations/E9B5110D18EE59C7",
+    "operationId": "E9B5110D18EE59C7",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-07-03T09:14:08.8618772Z",
+      "duration": "PT1.8945967S",
+      "trackingId": "59c59c4d-d2fa-43c2-a48c-6ad8f5090748",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/393e3de3-0900-4b72-8f1b-fb3b1d6b97f1/resourceGroups/armlylla/providers/Microsoft.Network/networkSecurityGroups/default-NSG",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "default-NSG"
+      }
+    }
+  }
+]
