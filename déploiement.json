@@ -14,7 +14,7 @@
         "value": "lylla"
       },
       "adminPassword": {
-        "type": "SecureString"
+        "type": "Jevis@ambronay"
       },
       "dnsLabelPrefix": {
         "type": "String",
@@ -46,7 +46,7 @@
       },
       "vmName": {
         "type": "String",
-        "value": "simple-vm"
+        "value": "simplelylla-vm"
       },
       "securityType": {
         "type": "String",
